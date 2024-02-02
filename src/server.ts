@@ -13,7 +13,7 @@ export default class Server implements Party.Server {
     );
 
     // let's send a message to the connection
-    conn.send("hello from server");
+    conn.send('hello' + new Date());
   }
 
   onMessage(message: string, sender: Party.Connection) {
